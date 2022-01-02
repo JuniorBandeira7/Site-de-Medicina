@@ -1,51 +1,52 @@
 body{
     margin: 0;
-    max-width: 100%;
-    min-width: 1185px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #d0f6fa;
 }
-#footer{
+body, #footer, #footer2, #blank1, #footer3, #blank2{
     width: 100%;
+    min-width: 1185px;
+} 
+#footer{
     height: 40px;
-    background: transparent url(Estilo/fundo_barra_top.jpg) repeat top center;
+    background: transparent url(Estilo/fundo_barra_top.jpg) repeat center top;
 }
 #footer1{
-    width: 75%;
+    width: 1184px;
     height: 159px;
     display: flex;
+    justify-content: space-between;
 }
 #footer1 img{
     width: 355px;
     height: 95px;
     margin-top: 32px;
-    margin-left: 8%;
 
 }
 #agende{
-    margin-left: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 #agende p{
-    font-size: 20px;
+    font-size: 25px;
     color: #258b95;
     margin-bottom: -5px;
 }
 #blank1{
-    width: 100%;
-    background: transparent url(Estilo/fundo_barra_top.jpg) repeat top center;
+    background: transparent url(Estilo/fundo_barra_top.jpg) repeat center center;
     height: 390px;
+    display: flex;
+    justify-content: center;
 }
 #blank1 img{
     width: 1184px;
     height: 572px;
-    margin-left: 19%;
+    BOX-SHADOW: #00000073 0px 25px 100px;
 }
 #footer2{
-    width: 100%;
     height: 60px;
     background-color: rgba(0, 0, 0, 0.226);
     display: flex;
@@ -56,7 +57,7 @@ body{
     font-size: 19px;
     text-transform: uppercase;
     text-align: center;
-    color: white;  
+    color: #d0f6fa;
 }
 #footer2  a{
     cursor: pointer;
@@ -66,4 +67,35 @@ body{
 }
 a{
     text-decoration: none;
+}
+#footer3{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.226);
+    margin-top: 250px;
+    position: absolute;
+    margin-top: 860px;
+}
+#footer3 p{
+    color: #d0f6fa;
+    font-size: 30px;
+}
+#blank2{
+    height: 410px;
+    background: url(Estilo/fundo_barra_top.jpg) repeat center center;
+    margin-top: 271px;
+    display: flex;
+    justify-content: center;
+}
+#blank2 div{
+    width: 1185px;
+    margin-top: 110px;
+    font-size: 25px;
+}
+@media(max-width: 1185px){
+    body, #footer, #footer2, #blank1,#footer3, #blank2{
+        width: 1185px;
+    } 
 }
