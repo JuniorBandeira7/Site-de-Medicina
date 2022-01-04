@@ -5,21 +5,21 @@ body{
     align-items: center;
     background-color: #d0f6fa;
 }
-body, #footer, #footer2, #blank1, #footer3, #blank2{
+body, #header, #header2, #blank1, #header3, #blank2, #header4, #header4 div, footer{
     width: 100%;
     min-width: 1185px;
 } 
-#footer{
+#header{
     height: 40px;
     background: transparent url(Estilo/fundo_barra_top.jpg) repeat center top;
 }
-#footer1{
+#header1{
     width: 1184px;
     height: 159px;
     display: flex;
     justify-content: space-between;
 }
-#footer1 img{
+#header1 img{
     width: 355px;
     height: 95px;
     margin-top: 32px;
@@ -46,29 +46,29 @@ body, #footer, #footer2, #blank1, #footer3, #blank2{
     height: 572px;
     BOX-SHADOW: #00000073 0px 25px 100px;
 }
-#footer2{
+#header2{
     height: 60px;
     background-color: rgba(0, 0, 0, 0.226);
     display: flex;
     justify-content: center;
     position: absolute;
 }
-#footer2 p, a{
+#header2 p, a{
     font-size: 19px;
     text-transform: uppercase;
     text-align: center;
     color: #d0f6fa;
 }
-#footer2  a{
+#header2  a{
     cursor: pointer;
 }
-#footer2 p{
+#header2 p{
     cursor: default;
 }
 a{
     text-decoration: none;
 }
-#footer3{
+#header3{
     height: 60px;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ a{
     position: absolute;
     margin-top: 860px;
 }
-#footer3 p{
+#header3 p{
     color: #d0f6fa;
     font-size: 30px;
 }
@@ -94,8 +94,74 @@ a{
     margin-top: 110px;
     font-size: 25px;
 }
+#header4{
+    height: 60px;
+    background: transparent url(Estilo/fundo_barra_top.jpg) repeat center top;
+    margin-top: 89px;
+    color: #d0f6fa;
+    font-size: 30px;
+}
+#header4 div{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.226);
+}
+#blank3{
+    height: 512px;
+    width: 1185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#blank3 h2{
+    color: #258b95;
+    font-size: 30px;
+}
+.blank3-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+.linha{
+    width: 238px;
+    height: 1px;
+    background-color: #258b95;
+
+}
+.blank3-div p{
+    font-size: 25px;
+    color: #258b95;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    background: transparent url(Estilo/fundo_barra_top.jpg) repeat center top;
+}
+footer footer{
+    background: rgba(0, 0, 0, 0.226);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 @media(max-width: 1185px){
-    body, #footer, #footer2, #blank1,#footer3, #blank2{
+    body, #header, #header2, #blank1,#header3, #blank2, #header4, #header4 div, footer{
         width: 1185px;
+    }
+    footer{
+        height: 176px;
     } 
+    footer footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
 }
